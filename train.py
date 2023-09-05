@@ -13,8 +13,8 @@ def evaluate(model, data_loader, device):
     - data_loader: A Pytorch data loader object
     """
     
-    y_true = np.array([], dtype=np.int)
-    y_pred = np.array([], dtype=np.int)
+    y_true = np.array([], dtype=np.int32)
+    y_pred = np.array([], dtype=np.int32)
     
     with torch.no_grad():
         for data in data_loader:
